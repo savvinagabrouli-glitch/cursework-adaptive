@@ -5,7 +5,9 @@
         xmlns:conv="clr-namespace:Cursework.Wpf.Converters"
         Title="Панель администратора" Width="1200" Height="720"
         Background="{StaticResource Brush.Background}"
-        Icon="pack://application:,,,/Assets/Icon/app.ico">
+        Icon="pack://application:,,,/Assets/Icon/app.ico"
+        UseLayoutRounding="True"
+        SnapsToDevicePixels="True">
 
     <Window.Resources>
         <conv:RoleDisplayConverter x:Key="RoleDisplay"/>

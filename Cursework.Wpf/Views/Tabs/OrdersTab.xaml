@@ -6,15 +6,33 @@
     <UserControl.Resources>
         <conv:BooleanNegationConverter x:Key="Not"/>
         <conv:OrderStatusToRussianConverter x:Key="OrderStatusToRu"/>
+        <conv:LessThanConverter x:Key="LessThan"/>
+        <conv:BetweenConverter x:Key="Between"/>
+
+        <Style x:Key="AdaptiveHeaderStyle" TargetType="DataGridColumnHeader" BasedOn="{StaticResource {x:Type DataGridColumnHeader}}">
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="Padding" Value="6,4"/>
+            <Setter Property="ContentTemplate">
+                <Setter.Value>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" TextWrapping="Wrap" TextAlignment="Center"/>
+                    </DataTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
     </UserControl.Resources>
 
     <Grid Background="{StaticResource Brush.Background}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="260"/>
+            <ColumnDefinition x:Name="FilterColumn" Width="260" MinWidth="220"/>
             <ColumnDefinition Width="16"/>
-            <ColumnDefinition Width="*"/>
+            <ColumnDefinition x:Name="ContentColumn" Width="*" MinWidth="520"/>
             <ColumnDefinition Width="16"/>
-            <ColumnDefinition Width="340"/>
+            <ColumnDefinition x:Name="FormColumn" Width="340" MinWidth="300"/>
         </Grid.ColumnDefinitions>
 
         <Border Grid.Column="0"
@@ -103,7 +121,9 @@
                           IsReadOnly="{Binding IsEditingGrid, Converter={StaticResource Not}}"
                           BorderBrush="{StaticResource Brush.Border}"
                           BorderThickness="1"
+                          ColumnHeaderStyle="{StaticResource AdaptiveHeaderStyle}"
                           ScrollViewer.VerticalScrollBarVisibility="Auto"
+                          ScrollViewer.HorizontalScrollBarVisibility="Auto"
                           ScrollViewer.CanContentScroll="True"
                           SelectionMode="Single"
                           SelectionUnit="FullRow"
@@ -111,7 +131,7 @@
                     <DataGrid.Columns>
                         <DataGridTextColumn Header="№"
                                             Binding="{Binding Id}"
-                                            Width="60"
+                                            Width="70"
                                             IsReadOnly="True"/>
 
                         <DataGridTextColumn Header="Стол"
@@ -124,14 +144,17 @@
 
                         <DataGridTextColumn Header="Статус"
                                             Binding="{Binding Status, Converter={StaticResource OrderStatusToRu}}"
+                                            MinWidth="150"
                                             Width="160"/>
 
                         <DataGridTextColumn Header="Создан"
                                             Binding="{Binding CreatedAt, StringFormat='dd.MM.yyyy HH:mm'}"
+                                            MinWidth="150"
                                             Width="160"/>
 
                         <DataGridTextColumn Header="Закрыт"
                                             Binding="{Binding ClosedAt, StringFormat='dd.MM.yyyy HH:mm'}"
+                                            MinWidth="150"
                                             Width="160"/>
                     </DataGrid.Columns>
                 </DataGrid>

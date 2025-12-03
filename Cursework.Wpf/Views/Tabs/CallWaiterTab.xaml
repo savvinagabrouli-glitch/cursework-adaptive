@@ -8,6 +8,20 @@
     <UserControl.Resources>
         <conv:BooleanNegationConverter x:Key="Not"/>
         <conv:CallWaiterTypeToTextConverter x:Key="CallWaiterTypeConverter"/>
+        <conv:LessThanConverter x:Key="LessThan"/>
+        <conv:BetweenConverter x:Key="Between"/>
+
+        <Style x:Key="AdaptiveHeaderStyle" TargetType="DataGridColumnHeader" BasedOn="{StaticResource {x:Type DataGridColumnHeader}}">
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="Padding" Value="6,4"/>
+            <Setter Property="ContentTemplate">
+                <Setter.Value>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" TextWrapping="Wrap" TextAlignment="Center"/>
+                    </DataTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
 
         <x:Array x:Key="CallTypeFilterList" Type="{x:Type sys:String}">
             <sys:String>Все</sys:String>
@@ -166,7 +180,9 @@
                               GridLinesVisibility="Horizontal"
                               BorderBrush="{StaticResource Brush.Border}"
                               BorderThickness="1"
+                              ColumnHeaderStyle="{StaticResource AdaptiveHeaderStyle}"
                               ScrollViewer.VerticalScrollBarVisibility="Auto"
+                              ScrollViewer.HorizontalScrollBarVisibility="Auto"
                               ScrollViewer.CanContentScroll="True"
                               SelectionMode="Single"
                               SelectionUnit="FullRow"
@@ -174,26 +190,32 @@
                         <DataGrid.Columns>
                             <DataGridTextColumn Header="№"
                                                 Binding="{Binding Id}"
-                                                Width="60"
+                                                Width="70"
                                                 IsReadOnly="True"/>
                             <DataGridTextColumn Header="Стол"
                                                 Binding="{Binding Table.Name}"
-                                                Width="*"/>
+                                                Width="*"
+                                                MinWidth="140"/>
                             <DataGridTextColumn Header="Номер заказа"
                                                 Binding="{Binding OrderId}"
-                                                Width="*"/>
+                                                Width="*"
+                                                MinWidth="140"/>
                             <DataGridTextColumn Header="Тип"
                                                 Binding="{Binding Type, Converter={StaticResource CallWaiterTypeConverter}}"
-                                                Width="160"/>
+                                                Width="160"
+                                                MinWidth="150"/>
                             <DataGridTextColumn Header="Создан"
                                                 Binding="{Binding CreatedAt, StringFormat='dd.MM.yyyy HH:mm'}"
-                                                Width="160"/>
+                                                Width="170"
+                                                MinWidth="160"/>
                             <DataGridTextColumn Header="Взят"
                                                 Binding="{Binding HandledAt, StringFormat='dd.MM.yyyy HH:mm'}"
-                                                Width="160"/>
+                                                Width="170"
+                                                MinWidth="160"/>
                             <DataGridCheckBoxColumn Header="Обработан"
                                                     Binding="{Binding IsHandled}"
-                                                    Width="120"/>
+                                                    Width="120"
+                                                    MinWidth="110"/>
                         </DataGrid.Columns>
                     </DataGrid>
                 </Grid>
