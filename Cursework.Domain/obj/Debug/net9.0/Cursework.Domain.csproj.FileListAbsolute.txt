@@ -1,0 +1,29 @@
+D:\Project\Cursework.Domain\bin\Debug\net9.0\Cursework.Domain.deps.json
+D:\Project\Cursework.Domain\bin\Debug\net9.0\Cursework.Domain.runtimeconfig.json
+D:\Project\Cursework.Domain\bin\Debug\net9.0\Cursework.Domain.dll
+D:\Project\Cursework.Domain\bin\Debug\net9.0\Cursework.Domain.pdb
+D:\Project\Cursework.Domain\obj\Debug\net9.0\Cursework.Domain.csproj.AssemblyReference.cache
+D:\Project\Cursework.Domain\obj\Debug\net9.0\Cursework.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project\Cursework.Domain\obj\Debug\net9.0\Cursework.Domain.AssemblyInfoInputs.cache
+D:\Project\Cursework.Domain\obj\Debug\net9.0\Cursework.Domain.AssemblyInfo.cs
+D:\Project\Cursework.Domain\obj\Debug\net9.0\Cursework.Domain.csproj.CoreCompileInputs.cache
+D:\Project\Cursework.Domain\obj\Debug\net9.0\Cursework.Domain.dll
+D:\Project\Cursework.Domain\obj\Debug\net9.0\refint\Cursework.Domain.dll
+D:\Project\Cursework.Domain\obj\Debug\net9.0\Cursework.Domain.pdb
+D:\Project\Cursework.Domain\obj\Debug\net9.0\Cursework.Domain.genruntimeconfig.cache
+D:\Project\Cursework.Domain\obj\Debug\net9.0\ref\Cursework.Domain.dll
+C:\Users\maks_\OneDrive\Рабочий стол\clone\add-waiter\Cursework.Domain\bin\Debug\net9.0\Cursework.Domain.deps.json
+C:\Users\maks_\OneDrive\Рабочий стол\clone\add-waiter\Cursework.Domain\bin\Debug\net9.0\Cursework.Domain.runtimeconfig.json
+C:\Users\maks_\OneDrive\Рабочий стол\clone\add-waiter\Cursework.Domain\bin\Debug\net9.0\Cursework.Domain.dll
+C:\Users\maks_\OneDrive\Рабочий стол\clone\add-waiter\Cursework.Domain\bin\Debug\net9.0\Cursework.Domain.pdb
+C:\Users\maks_\OneDrive\Рабочий стол\clone\add-waiter\Cursework.Domain\obj\Debug\net9.0\Cursework.Domain.csproj.AssemblyReference.cache
+C:\Users\maks_\OneDrive\Рабочий стол\clone\add-waiter\Cursework.Domain\obj\Debug\net9.0\Cursework.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\maks_\OneDrive\Рабочий стол\clone\add-waiter\Cursework.Domain\obj\Debug\net9.0\Cursework.Domain.AssemblyInfoInputs.cache
+C:\Users\maks_\OneDrive\Рабочий стол\clone\add-waiter\Cursework.Domain\obj\Debug\net9.0\Cursework.Domain.AssemblyInfo.cs
+C:\Users\maks_\OneDrive\Рабочий стол\clone\add-waiter\Cursework.Domain\obj\Debug\net9.0\Cursework.Domain.csproj.CoreCompileInputs.cache
+C:\Users\maks_\OneDrive\Рабочий стол\clone\add-waiter\Cursework.Domain\obj\Debug\net9.0\Cursework.Domain.sourcelink.json
+C:\Users\maks_\OneDrive\Рабочий стол\clone\add-waiter\Cursework.Domain\obj\Debug\net9.0\Cursework.Domain.dll
+C:\Users\maks_\OneDrive\Рабочий стол\clone\add-waiter\Cursework.Domain\obj\Debug\net9.0\refint\Cursework.Domain.dll
+C:\Users\maks_\OneDrive\Рабочий стол\clone\add-waiter\Cursework.Domain\obj\Debug\net9.0\Cursework.Domain.pdb
+C:\Users\maks_\OneDrive\Рабочий стол\clone\add-waiter\Cursework.Domain\obj\Debug\net9.0\Cursework.Domain.genruntimeconfig.cache
+C:\Users\maks_\OneDrive\Рабочий стол\clone\add-waiter\Cursework.Domain\obj\Debug\net9.0\ref\Cursework.Domain.dll
